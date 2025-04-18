@@ -16,7 +16,7 @@ const PasswordReset = () => {
         setMessage("");
 
         try {
-        const res = await fetch("http://localhost:5001/api/users/password-reset", {
+        const res = await fetch("https://password-reset-flow-xyvz.onrender.com/api/users/password-reset", {
                 method: "POST",
                 headers: {
                     "Content-type" : "application/json"

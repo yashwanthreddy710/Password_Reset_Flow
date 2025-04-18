@@ -13,7 +13,7 @@ const LoginForm = () => {
     setMessage('');
 
     try {
-      const res = await fetch("http://localhost:5001/api/users/login", {
+      const res = await fetch("https://password-reset-flow-xyvz.onrender.com/api/users/login", {
         method: "POST",
         headers: {
           "Content-type": "application/json",

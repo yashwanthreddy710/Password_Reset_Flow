@@ -15,7 +15,7 @@ const RegisterForm = () => {
     setMessage('');
 
     try {
-      const res = await fetch("http://localhost:5001/api/users/register", {
+      const res = await fetch("https://password-reset-flow-xyvz.onrender.com/api/users/register", {
         method: "POST",
         headers: {
           "Content-type": "application/json",
