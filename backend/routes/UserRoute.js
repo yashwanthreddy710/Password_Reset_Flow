@@ -72,7 +72,7 @@ router.post("/password-reset", async (req, res) => {
 
         await user.save();
 
-        const resetLink = `http://localhost:3002/reset-password/${token}`;
+        const resetLink = `https://fastidious-phoenix-90d5c8.netlify.app/reset-password/${token}`;
         await sendMail(user.email, "Password Reset", `Reset your password: ${resetLink}`);
 
         res.status(200).json({ message: `Password reset link sent to your email ${user.email}` });
